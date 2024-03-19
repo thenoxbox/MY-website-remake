@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/779f9d4c6d.js" crossorigin="anonymous"></script>
+    <link href="https://api.fontshare.com/v2/css?f[]=recia@500&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=sentient@700&display=swap" rel="stylesheet">
+    <title>Chukwuemeka-oluchukwu</title>
+    <style>
+        body{
+            /* font-family: "Exo 2", sans-serif; */
+            scroll-behavior: smooth;
+            box-sizing: border-box;
+            background-color: #0047AB;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        .fsection{
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 2fr;
+        }
+        .ssection{
+            padding-top: 300px;
+            display: inline-flex;
+            gap: 10px;
+            flex-direction: column;
+        }
+        .fsection .nav-bar{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 70px;
+        }
+        .about-me{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: auto auto;
+        }
+        .about-me img{
+            padding-top: 26px;
+            width: 400px;
+        }
+        .thetextpart{
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            padding: 50px;
+        }
+        .maintext{
+            display: flex;
+            flex-direction: column;
+            padding: 100px;
+            align-self: center;
+            font-family: 'Recia', serif;
+            color: #73C2FB;
+            border-radius: 10px;
+            background-color: azure;
+        }
+        .nav-bar img{
+            padding-top: 5px;
+            width: 160px;
+        }
+        .socials{
+            padding: 5px;
+        }
+        .nav-bar a{
+            text-decoration: none;
+            color: #FF8C00;
+            font-size: 35px;
+        }
+        .centertext{
+            padding-top: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 260px;
+        }
+        .centertext h1{
+            font-family: 'Recia', serif;
+            text-align: center;
+            font-size: 90px;
+            color: #73C2FB;
+        }
+        /* .centertext h3{
+            font-family: 'Recia', serif;
+            text-align: center;
+            color: #73C2FB;
+        } */
+        .centertext span{
+            font-family: 'Sentient', serif;;
+            font-size: 92px;
+            animation: pulsate 2.0s ease-in-out infinite alternate;
+        }
+        @keyframes pulsate {
+        from {
+        opacity: 0.5;
+        text-shadow: none;
+        color: #73C2FB;
+        }
+        to {
+        opacity: 1;
+        color: #FF8C00;
+        text-shadow: 2px 2px 5px rgb(255,140,0); /* Create inner glow pulse */
+        }
+        }
+        .ssection .about{
+            display: flex;
+            flex-direction: row;
+        }
+        .about{
+            justify-content: center;
+        }
+        .about h1{
+            font-size: 35px;
+            font-family: 'Recia', serif;
+            color: #FF8C00;
+        }
+        .details{
+            font-family: 'Recia', serif;
+            color: #73C2FB;
+            border-radius: 10px;
+            padding: 50px;
+            /* text-align: center; */
+            background-color: azure;
+            box-shadow: none;
+            transition: box-shadow 0.4s ease-in-out;
+        }
+        .details:nth-child(1):hover{
+            box-shadow: 12px 12px 5px 0px rgb(255,140,0);
+        }
+        .details:nth-child(2):hover{
+            box-shadow: 12px 12px 5px 0px rgb(255,140,0);
+        }
+        .details:nth-child(3):hover{
+            box-shadow: 12px 12px 5px 0px rgb(255,140,0);
+        }
+        span{
+            color: #FF8C00;
+        }
+        .ssection .cards{
+            display: grid;
+            gap: 15px;
+            padding-bottom: 50px;
+            grid-template-columns: auto auto auto;
+        }
+        @media (max-width: 1200px) {
+            .nav-bar{
+                padding-top: 20px;
+                align-items: center;
+            }
+            .nav-bar img{
+                width: 120px;
+            }
+
+            .centertext{
+            margin-bottom: 400px;
+            padding-top: 140px;
+            }
+            .centertext h1{
+                font-size: 80px;
+            }
+            .centertext span{
+                font-size: 82px;
+            }
+            .details{
+            transition: box-shadow 0.4s ease-in-out;
+            }
+            .details:nth-child(1):hover{
+                box-shadow: 0px 1px 5px 5px rgb(255,140,0);
+            }
+            .details:nth-child(2):hover{
+                box-shadow: 0px 1px 5px 5px rgb(255,140,0);
+            }
+            .details:nth-child(3):hover{
+                box-shadow: 0px 1px 5px 5px rgb(255,140,0);
+            }
+            .ssection{
+            padding-top: 120px;
+            }
+            .about-me{
+                display: inline-flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 0px;
+            }
+            .meimg{
+                align-items: center;
+                padding: -1px;
+            }
+
+            .about-me img{
+                width: 315px;
+            }
+            .thetextpart{
+                align-self: center;
+                padding-right: 19px;
+                padding-left: 20px;
+            }
+            .maintext{
+                padding: 45px;
+            }
+            .ssection .cards{
+            display: inline-flex;
+            flex-direction: column;
+            gap: 30px;
+            padding-bottom: 50px;
+            grid-template-columns: auto auto auto;
+        }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="fsection">
+                    <div class="nav-bar">
+                            <div class="logo"><img src="/Untitledwogo.png" alt=""></div>
+                            <div class="socials">
+                            <a href="https://github.com/thenoxbox"><i class="fa-brands fa-square-github"></i></a>
+                            <a href="https://www.linkedin.com/in/chukwuemeka-oluchukwu-089a4624b/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://wa.me/message/Y7UIRNPAEVBKE1?src=qr"><i class="fa-brands fa-square-whatsapp"></i></a>
+                            <a href="mailto:oluchuks78@gmail.com"><i class="fa-solid fa-square-envelope"></i></a>
+                            </div>
+                    </div>
+        
+
+                <div class="main">
+                    <div class="centertext"><h1>Hey, I'm <span>Olu.</span></h1> </div>
+                </div>
+
+                <div class="about-me">
+                    <div class="meimg">
+                        <img src="/IMG_2771.png" alt="a picture of me">
+                    </div>
+                    <div class="thetextpart">
+                        <div class="maintext">
+                            <p>I am a <span>frontend web developer</span> who is passionate about making things work in the best way possible. By using the newest and most powerful tools, I design and build websites that are not only functional but also look great. I am always eager to learn and take on new challenges to create something amazing for the users.</p>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+        <div class="ssection">
+            <div class="about"> <h1>What i do:</h1> </div>
+                    <div class="cards">
+                                <div class="details">
+                                <p>I'm Oluchukwu, a passionate <span>Frontend Developer</span> specializing in <span> HTML, CSS, and Javascript</span>. I have a knack for translating ideas into captivating digital experiences. Beyond coding, I'm a gamer, a movie enthusiast, and a fan of Manga & anime.
+                                </p>
+                                </div>
+                                <div class="details">
+                                <p>What sets me apart is my dedication to clear and open communication. I actively listen to your needs and collaborate closely to ensure your vision is realized. My adaptability in communication, transparency in project details, and commitment to timely updates make working with me a smooth and productive experience
+                                </p>
+                                </div>
+                                <div class="details">
+                                <p>I bring a diverse skill set to the table, combining technical expertise with a love for creative storytelling. Let's embark on a digital journey together, where code, creativity, and communication converge to make a meaningful impact in the digital realm.
+                                </p>
+                                </div>
+                    </div>
+        </div>
+    </div>
+    
+</body>
+</html>
